@@ -3,8 +3,10 @@ export default {
   colors: {
     primary: '#200041',
     secondary: '#6B33FF',
+    third: '#C41EA2',
     dark: '#000',
     light: '#DFDFDF',
     background: '#10002B',
+    gameCard: '#4437C7'
   },
 };

@@ -8,17 +8,11 @@ export const Main = styled.main`
 `;
 
 export const ContainerImage = styled.div`
-  display: flex;
-  height: 100vh;
   width: 100%;
   padding-top: 100px;
+  display: flex;
   flex-direction: column;
   background-repeat: no-repeat, repeat;
-  background-size: cover;
-
-  @media screen and (max-width: 1260px) {
-    height: auto;
-  }
 `;
 
 // Animations

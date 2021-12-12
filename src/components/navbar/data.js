@@ -14,14 +14,14 @@ export default [
   },
   {
     id: 3,
-    name: 'ENTRAR',
+    name: 'ACESSAR',
     link: '',
     more: null
   },
   /*
   {
     id: 4,
-    name: 'MEU PERFIL',
+    name: 'PERFIL',
     link: '',
     more: [
       {

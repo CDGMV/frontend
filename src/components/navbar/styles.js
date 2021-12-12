@@ -9,7 +9,11 @@ export const Nav = styled.nav`
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  background-color: ${({ theme }) => theme.colors.background};
+  background: rgb(36,0,70);
+  background: -moz-linear-gradient(180deg, rgba(36,0,70,1) 0%, rgba(16,0,43,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(36,0,70,1) 0%, rgba(16,0,43,1) 100%);
+  background: linear-gradient(180deg, rgba(36,0,70,1) 0%, rgba(16,0,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#240046",endColorstr="#10002b",GradientType=1);
   z-index: 9999;
 `;
 
@@ -20,7 +24,7 @@ export const Logo = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 70px;
+  width: 230px;
   height: 70px;
 `;
 
@@ -107,7 +111,7 @@ export const Redirect = styled.a`
   font-size: 22px;
 
   :hover {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.third};
     opacity: 0.9;
     transition: 0.3s;
   }
