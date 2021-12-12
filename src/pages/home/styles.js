@@ -21,12 +21,3 @@ export const CardsSection = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 `;
-
-export const SearchSection = styled.div`
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  margin-top:30px;
-  margin-bottom: 30px;
-`;

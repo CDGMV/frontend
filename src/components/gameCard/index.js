@@ -1,14 +1,14 @@
 import React from 'react';
 import {Card, Image, Info, Data, DataText, Tag, TagText} from "./styles";
 
-export default function GameCard({ image, name, price, status, type }) {
+export default function GameCard({ to, game }) {
   return (
-    <Card>
-      <Image src={image} />
+    <Card to={{pathname: to, state: game}}>
+      <Image src={game.image} />
       <Info>
         <Data>
-          <DataText>{name}</DataText>
-          <DataText>R${" " + price}</DataText>
+          <DataText>{game.short}</DataText>
+          <DataText>R${" " + game.price}</DataText>
         </Data>
         <Tag>
           <TagText>Disponível</TagText>

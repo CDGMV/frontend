@@ -15,6 +15,8 @@ export const Nav = styled.nav`
   background: linear-gradient(180deg, rgba(36,0,70,1) 0%, rgba(16,0,43,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#240046",endColorstr="#10002b",GradientType=1);
   z-index: 9999;
+  padding-left: 10%;
+  padding-right: 10%; 
 `;
 
 export const Logo = styled.div`

@@ -1,7 +1,18 @@
 import styled from 'styled-components';
-import {Link} from 'react-router-dom'
 
-export const Card = styled(Link)`
+
+export const SearchSection = styled.div`
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top:30px;
+  margin-bottom: 30px;
+`;
+
+
+/*
+export const Card = styled.button`
   width: 90%;
   height: 400px;
   cursor: pointer;
@@ -62,3 +73,4 @@ export const TagText = styled.h2`
   font-size: 1.0rem;
   color: ${({ theme }) => theme.colors.gameCard};
 `;
+*/

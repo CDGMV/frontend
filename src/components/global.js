@@ -15,6 +15,10 @@ export const ContainerImage = styled.div`
   background-repeat: no-repeat, repeat;
 `;
 
+export const ContainerBox = styled.div`
+  padding-top: 100px;
+`
+
 // Animations
 export const Box = styled.main`
   display: flex;
@@ -27,11 +31,11 @@ export const Box = styled.main`
 
 export const Loader = styled.div`
   animation: is-rotating 1s infinite;
-  border: 8px solid ${({ theme }) => theme.colors.dark};
+  border: 6px solid ${({ theme }) => theme.colors.secondary};
   border-radius: 50%;
-  border-top-color: ${({ theme }) => theme.colors.primary};
-  height: 70px;
-  width: 70px;
+  border-top-color: ${({ theme }) => theme.colors.light};
+  height: 45px;
+  width: 45px;
 
   @keyframes is-rotating {
     to {
