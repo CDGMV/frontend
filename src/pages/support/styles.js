@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import background from '../../assets/signUp/background.png';
+import background from '../../assets/support/background.jpg';
 import {ContainerImage} from "../../components/global";
 
-export const ContainerSuport = styled(ContainerImage)`
+export const ContainerSupport = styled(ContainerImage)`
   min-height: 100vh;
   justify-content: top;
   align-items: center;
@@ -12,7 +12,6 @@ export const ContainerSuport = styled(ContainerImage)`
 
 export const InitialSection = styled.div`
   width: 80%;
-  margin-bottom: 50px;
 
   h1{
     width: 60%;
@@ -22,14 +21,14 @@ export const InitialSection = styled.div`
 `;
 
 export const Section = styled.div`
-  width: 60%;
+  width: 80%;
   padding: 50px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(36, 0, 70, 0.5);
+  background-color: ${({ theme }) => theme.colors.cardBackground};
   border: 1px solid #6B33FF;
   border-radius: 15px;
   backdrop-filter: blur(20px);
@@ -42,12 +41,12 @@ export const Section = styled.div`
 `;
 
 export const SocialSection = styled.div`
-  width: 80%;
-  margin-top: 20px;
+  width: 100%;
   padding-left: 20%;
   padding-right: 20%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 80px;
 `;
 
 export const SocialLine = styled.div`
@@ -55,7 +54,7 @@ export const SocialLine = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;
 
 export const Icon = styled.img`
@@ -63,5 +62,9 @@ export const Icon = styled.img`
   height: 35px;
   display: flex:
   align-self: center;
-  margin-right: 20px;
+  margin-right: 10px;
 `;
+
+
+
+/* background-color: rgba(36, 0, 70, 0.8); */

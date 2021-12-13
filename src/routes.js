@@ -8,10 +8,10 @@ import Home from "./pages/home";
 import SignIn from "./pages/signIn";
 import SignUp from "./pages/signUp";
 import Game from "./pages/game";
-//import MyGames from "./pages/myGames";
-//import Historic from "./pages/historic";
-//import Profile from "./pages/profile";
-//import Suport from "./pages/suport";
+import MyGames from "./pages/myGames";
+import Historic from "./pages/historic";
+import Profile from "./pages/profile";
+import Support from "./pages/support";
 
 export default function RoutesNavigation() {
   const [open, setOpen] = useState(false);
@@ -27,7 +27,7 @@ export default function RoutesNavigation() {
             <Route element = { <MyGames/> } path="/my-games" exact />
             <Route element = { <Historic/> } path="/historic" exact />
             <Route element = { <Profile/> } path="/profile" exact />
-    	      <Route element = { <Suport/> } path="/suport" exact />
+    	      <Route element = { <Support/> } path="/support" exact />
           </Routes>
       </Router>
   )

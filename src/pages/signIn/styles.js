@@ -25,7 +25,8 @@ export const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(36, 0, 70, 0.5);
+  /* background-color: rgba(36, 0, 70, 0.5); */
+  background-color: ${({ theme }) => theme.colors.cardBackground};
   border: 1px solid #6B33FF;
   border-radius: 15px;
   backdrop-filter: blur(20px);
