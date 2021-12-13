@@ -26,8 +26,8 @@ export default function RoutesNavigation() {
             <Route element = { <Game/> } path="/gamerent" exact />
             <Route element = { <MyGames/> } path="/my-games" exact />
             <Route element = { <Historic/> } path="/historic" exact />
-            {/* <Route element = { <Profile/> } path="/profile" exact />
-    	      <Route element = { <Suport/> } path="/suport" exact />*/}
+            <Route element = { <Profile/> } path="/profile" exact />
+    	      <Route element = { <Suport/> } path="/suport" exact />
           </Routes>
       </Router>
   )
