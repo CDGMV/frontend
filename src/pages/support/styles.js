@@ -4,25 +4,29 @@ import {ContainerImage} from "../../components/global";
 
 export const ContainerSupport = styled(ContainerImage)`
   min-height: 100vh;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
   background: url(${background}) fixed;
   background-size: cover;
+  background-position: center;
 `;
 
 export const InitialSection = styled.div`
   width: 80%;
+  max-width: 100rem;
 
   h1{
     width: 60%;
     color: ${({ theme }) => theme.colors.light};
     font-size: 40px;
+    text-shadow: 1px 1px 30px ${({ theme }) => theme.colors.cardBackground};
   }
 `;
 
 export const Section = styled.div`
   width: 80%;
-  padding: 50px;
+  max-width: 100rem;
+  padding: 10px 50px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -46,7 +50,8 @@ export const SocialSection = styled.div`
   padding-right: 20%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 80px;
+  grid-column-gap: 10%;
+  justify-content: center;
 `;
 
 export const SocialLine = styled.div`
@@ -55,6 +60,7 @@ export const SocialLine = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  margin: auto;
 `;
 
 export const Icon = styled.img`

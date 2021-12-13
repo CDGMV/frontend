@@ -5,11 +5,11 @@ import {Link} from 'react-router-dom';
 
 export const ContainerHome = styled(ContainerImage)`
   min-height: 100vh;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
   background: url(${background}) fixed;
   background-size: cover;
-  min-width: 400px;
+  min-width: 550px;
 `;
 
 export const CardsSection = styled.div`
