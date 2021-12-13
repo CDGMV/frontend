@@ -32,6 +32,7 @@ export const InformationSection = styled.div`
   flex-direction: column;
 
   p {
+    text-align: justify;
     font-size: 16px;
     color: white;
   }
@@ -53,8 +54,6 @@ export const ImageSection = styled.div`
   display: flex;
   justify-content: flex-start;
   align-self: center;
-  margin-top: 1 0px;
-  margin-bottom: 30px;
 `;
 
 export const Image = styled.img`
@@ -82,7 +81,7 @@ export const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  
   p {
     margin: 0px;
 
@@ -98,6 +97,7 @@ export const ButtonSection = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 `;
 
 export const Block = styled.div`

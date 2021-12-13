@@ -3,7 +3,7 @@ import {Card, Image, Info, Data, DataText, Tag, TagText} from "./styles";
 
 export default function GameCard({ to, game }) {
   return (
-    <Card to={{pathname: to, state: game}}>
+    <Card to={to} state={game}>
       <Image src={game.image} />
       <Info>
         <Data>

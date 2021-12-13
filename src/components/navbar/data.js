@@ -2,20 +2,20 @@
 export default [
   {
     id: 1,
-    name: 'JOGOS',
-    link: '',
+    name: 'LOJA',
+    link: '/',
     more: null
   },
   {
     id: 2,
     name: 'SUPORTE',
-    link: '',
+    link: '/',
     more: null
   },
   {
     id: 3,
     name: 'ACESSAR',
-    link: '',
+    link: '/signIn',
     more: null
   },
   /*

@@ -1,5 +1,6 @@
 /* eslint-disable spaced-comment */
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 //navbar.js
 export const Nav = styled.nav`
@@ -108,7 +109,7 @@ export const Ul = styled.ul`
   }
 `;
 
-export const Redirect = styled.a`
+export const Redirect = styled(Link)`
   color: ${({ theme }) => theme.colors.light};
   font-size: 22px;
 

@@ -1,38 +1,48 @@
 // /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React, {useState} from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import {ContainerGamePage, GameData, ImageSection, InformationSection, GoBack, Image, GameName, Details, ButtonSection, Block, PopUp} from "./styles";
 import Button from "../../components/button";
 import {Loader} from "../../components/global";
-import RuneTerra from '../../assets/games/runeterra.png';
 
 export default function GamePage() {
-    let payment = false;
-    let {game} = useParams();
-    console.log(game);
+    const [payment, setPayment] = useState(false);
+    const [earn, setEarn] = useState(false);
+    const [buttonStatus, setButtonStatus] = useState("Alugar agora"); 
+    let location = useLocation();
+    let game = location.state;
+
+    const sleep = (ms) => {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    const rent = async () => {
+        setPayment(true);
+        await sleep(3000);
+        setPayment(false);
+        setEarn(true);
+        setButtonStatus("Adquirido");
+    }
+    
     return (
         <>
             <ContainerGamePage>
                 <GoBack><Link to="/"><p>{'< Voltar'}</p></Link></GoBack>
                 <GameData>
                     <ImageSection>
-                        <Image src={RuneTerra} />
+                        <Image src={game.image} />
                     </ImageSection>
                     <InformationSection>
-                        <GameName>Teste</GameName>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into
-                        electronic typesetting, remaining essentially unchanged.</p>
+                        <GameName>{game.name}</GameName>
+                        <p>{game.info}</p>
                         <Details>
-                            <p>Genêro: Ação</p>
-                            <p>Classificação: LIVRE</p>
-                            <p>Plataforma: PC</p>
-                            <p>Preço:<b>R$250.00</b></p>
+                            <p>Genêro: {game.genre}</p>
+                            <p>Classificação: {game.classification}</p>
+                            <p>Plataforma: {game.platform}</p>
+                            <p>Preço:<b>R${game.price}</b></p>
                         </Details>
                         <ButtonSection>
-                            <Button buttonName="Alugar agora" size="50%"/>
+                            <Button onClick={rent} buttonName={buttonStatus} size="50%" block={earn}/>
                         </ButtonSection>                    
                     </InformationSection>
                 </GameData>
@@ -40,8 +50,8 @@ export default function GamePage() {
             {payment && 
                 <Block>
                     <PopUp>
-                        <h3>Você está adquirindo {"LEGENDS OF RUNETERRA"}</h3>
-                        <p>Aguarde que estamos te redirecionando para o pagamento</p>
+                        <h3>Você está adquirindo {game.name}</h3>
+                        <p>Aguarde enquanto processamos o pagamento</p>
                         <Loader />
                     </PopUp>
                 </Block>

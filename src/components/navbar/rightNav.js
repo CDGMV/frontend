@@ -9,7 +9,7 @@ export default function RightNav({ open, setOpen }) {
         <li key={item.id}>
           <Redirect
             onClick={() => window.innerWidth <= 850 && setOpen(!open)}
-            href={item.link}
+            to={item.link}
           >
             {item.name}
           </Redirect>

@@ -20,7 +20,7 @@ export default function SignIn() {
         </Form>
         <ButtonSection>
           <Redirect to="/signIn"><Button buttonName="Voltar" size="90%"/></Redirect>
-          <Redirect to="/home"><Button buttonName="Cadastrar" size="90%"/></Redirect>
+          <Redirect to="/"><Button buttonName="Cadastrar" size="90%"/></Redirect>
         </ButtonSection>
       </Section>
     </ContainerSignUp>

@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 import background from '../../assets/signIn/background.png';
 import {ContainerImage} from "../../components/global";
+import {Link} from 'react-router-dom';
+
+
+export const Redirect = styled(Link)`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 export const ContainerSignIn = styled(ContainerImage)`
   min-height: 100vh;
@@ -40,4 +48,10 @@ export const SignUp = styled.div`
       color: ${({ theme }) => theme.colors.third};
     }
   }
+`;
+
+export const ButtonSection = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;

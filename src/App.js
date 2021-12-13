@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
@@ -8,10 +8,7 @@ import RoutesNavigation from "./routes";
 
 import {Main} from "./components/global";
 
-import NavBar from './components/navbar';
-
 export default function App() {
-  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -30,7 +27,6 @@ export default function App() {
         <GlobalStyle />
         <ThemeProvider theme={theme}>
           <Main>
-            <NavBar open={open} setOpen={setOpen} />
             <RoutesNavigation/>
           </Main>
         </ThemeProvider> 

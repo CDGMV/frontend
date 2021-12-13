@@ -11,7 +11,7 @@ export const DynamicButton = styled.button`
   border-radius: 10px;
   box-shadow: 0 2px #10002B;
   font-size: 1.0rem;
-  font-weight: bold;
+  font-weight: normal;
 
   :hover {
     background-color: ${({ theme }) => theme.colors.third};
