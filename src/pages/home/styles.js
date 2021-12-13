@@ -3,10 +3,6 @@ import background from '../../assets/home/background.jpg';
 import {ContainerImage} from "../../components/global";
 import {Link} from 'react-router-dom';
 
-export const Redirect = styled(Link)`
-  width: 50%;
-`;
-
 export const ContainerHome = styled(ContainerImage)`
   min-height: 100vh;
   justify-content: top;

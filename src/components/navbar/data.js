@@ -4,54 +4,37 @@ export default [
     id: 1,
     name: 'LOJA',
     link: '/',
-    more: null
-  },
+  },  
   {
     id: 2,
-    name: 'SUPORTE',
-    link: '/',
-    more: null
+    name: 'PERFIL',
+    link: 'profile',
   },
   {
     id: 3,
-    name: 'ACESSAR',
-    link: '/signIn',
-    more: null
+    name: 'JOGOS',
+    link: '/my-games',
   },
-  /*
   {
     id: 4,
-    name: 'PERFIL',
-    link: '',
-    more: [
-      {
-        id: 1,
-        name: 'PAINEL',
-        link: '',
-      },
-      {
-        id: 2,
-        name: 'PAINEL',
-        link: '',
-      },
-    ]
+    name: 'HISTÓRICO',
+    link: '/historic',
+  },   
+  {
+    id: 5,
+    name: 'SUPORTE',
+    link: '/suport',
   },
+  {
+    id: 6,
+    name: 'ACESSAR',
+    link: '/signIn',
+  }
+  /*
   {
     id: 5,
     name: 'PAINEL',
     link: '',
-    more: [
-      {
-        id: 1,
-        name: 'PAINEL',
-        link: '',
-      },
-      {
-        id: 2,
-        name: 'PAINEL',
-        link: '',
-      },
-    ]
-  },
+  }
   */
 ];

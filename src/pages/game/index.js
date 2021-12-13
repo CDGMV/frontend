@@ -9,6 +9,7 @@ export default function GamePage() {
     const [payment, setPayment] = useState(false);
     const [earn, setEarn] = useState(false);
     const [buttonStatus, setButtonStatus] = useState("Alugar agora"); 
+    
     let location = useLocation();
     let game = location.state;
 

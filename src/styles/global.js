@@ -16,11 +16,11 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb{
-    background: #DFDFDF;
+    background: #6B33FF;
   }
 
   ::-webkit-scrollbar-thumb:hover{
-    background: #6B33FF;
+    background: #C41EA2;
   }
 
   ::-webkit-input-placeholder {
