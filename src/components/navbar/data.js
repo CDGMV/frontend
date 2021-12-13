@@ -23,7 +23,7 @@ export default [
   {
     id: 5,
     name: 'SUPORTE',
-    link: '/suport',
+    link: '/support',
   },
   {
     id: 6,

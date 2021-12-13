@@ -5,10 +5,11 @@ import {Link} from 'react-router-dom';
 
 export const ContainerHome = styled(ContainerImage)`
   min-height: 100vh;
-  justify-content: top;
+  justify-content: center;
   align-items: center;
   background: url(${background}) fixed;
   background-size: cover;
+  min-width: 550px;
 `;
 
 export const CardsSection = styled.div`
@@ -16,4 +17,24 @@ export const CardsSection = styled.div`
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  @media screen and (max-width:940px){
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+  }
+  
+  @media screen and (max-width:750px){
+    width: 70%;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media screen and (max-width:685px){
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+  
+  @media screen and (max-width:550px){
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
 `;

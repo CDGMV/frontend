@@ -23,6 +23,11 @@ export const GameData = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+
+  @media screen and (max-width:850px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const InformationSection = styled.div`
@@ -35,6 +40,14 @@ export const InformationSection = styled.div`
     text-align: justify;
     font-size: 16px;
     color: white;
+  }
+  @media screen and (max-width:850px){
+    p {
+      width: 100%;
+      text-align: justify;
+      font-size: 16px;
+      color: white;
+    }
   }
 `;
 
@@ -54,6 +67,11 @@ export const ImageSection = styled.div`
   display: flex;
   justify-content: flex-start;
   align-self: center;
+  
+  @media screen and (max-width:850px){
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
