@@ -126,6 +126,10 @@ export const Block = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width:850px){
+    height: ${({ height }) => height};
+  }
 `;
 
 export const PopUp = styled.div`

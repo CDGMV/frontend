@@ -35,7 +35,7 @@ export default function Profile() {
           <Input readOnly={readOnly} value={contact} onChange={e => setContact(e.target.value)} labelName="Telefone" size="100%" />
         </Form>
         <ButtonSection>
-          <Redirect to="/"><Button buttonName="Sair" size="90%"/></Redirect>
+          <Redirect to={readOnly? "/signIn" : "/"}><Button buttonName={readOnly? "Sair" : "Voltar"} size="90%"/></Redirect>
           <Button onClick={edition} buttonName={readOnly? "Editar" : "Salvar"} size="45%"/>
         </ButtonSection>
       </Section>
